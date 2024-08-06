@@ -1,0 +1,21 @@
+{
+  "name": "com.gmail.obaydmerz.ferrum.core",
+  "displayName": "Ferrum Core",
+  "version": "1.0.0",
+  "description": "Ferrum Core is the foundational library, designed to provide essential tools and functionalities to enhance your Unity development experience, as well as the development of other libraries.",
+  "keywords": [
+    "Ferrum",
+    "Core",
+    "Utilities",
+    "Optimization",
+    "Unity"
+  ],
+  "author": {
+    "name": "Abderrahmene Merzoug",
+    "email": "obaydmerz@example.com",
+    "url": "https://github.com/obaydmerz"
+  },
+  "license": "MIT",
+  "licensesUrl": "https://ferrrum.gitbook.io/core/extra/license",
+  "documentationUrl": "https://ferrrum.gitbook.io/core"
+}
