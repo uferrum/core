@@ -1,14 +1,17 @@
 using UnityEngine;
+using System.Collections;
 
 namespace Ferrum
 {
+    
     public static class Math
     {
+        #region "Floats"
         public static float Apply(float leftA, float rightA, float leftB)
         {
             return (leftB * rightA) / leftA;
         }
-
+        
         /// <summary>
         /// Increment / Decrement the inner value.
         /// </summary>
@@ -35,7 +38,9 @@ namespace Ferrum
 
             return excess;
         }
-        #region "Random"
+        #endregion
+
+        #region "Vectors"
 
         public static Vector3 Random(Bounds bounds)
         {
@@ -53,5 +58,25 @@ namespace Ferrum
         }
 
         #endregion
+    }
+
+    public static class MonoBehaviorExtensions
+    {
+        public static IEnumerator WaitUntilStarted(this MonoBehaviour behavior)
+        {
+            while (!behavior.didStart) yield return null;
+            yield return null;
+        }
+    }
+
+    public static class BoundsExtensions
+    {
+        /// <summary>
+        /// Returns a random Vector3 position inside the bounds
+        /// </summary>
+        public static Vector3 Random(this Bounds bounds)
+        {
+            return Math.Random(bounds.min, bounds.max);
+        }
     }
 }

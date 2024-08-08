@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 
 
-namespace Ferrum.Player
+namespace Ferrum.Data
 {
     [Serializable]
     public class GameObjectType
